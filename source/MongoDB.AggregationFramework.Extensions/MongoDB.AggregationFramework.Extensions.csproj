@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpressionCompiler.cs" />
+    <Compile Include="IExpressionCompiler.cs" />
+    <Compile Include="IMatchOperation.cs" />
+    <Compile Include="IOperation.cs" />
+    <Compile Include="IPipeline.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

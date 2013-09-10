@@ -51,6 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcceptanceTest.cs" />
+    <Compile Include="ExpressionCompilerTest.cs" />
+    <Compile Include="ObjectModel\ChildDocument.cs" />
+    <Compile Include="ObjectModel\LeafModel.cs" />
+    <Compile Include="ObjectModel\RootDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
