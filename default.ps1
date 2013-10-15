@@ -61,14 +61,10 @@ task create_package -depends prepare_artifacts {
 }
 
 task publish -depends create_package {
-	$server = "https://www.nuget.org/api/v2/"
 	$api_key = Get-Content (Join-Path -Path . -ChildPath "apikey")
-	
-	Write-Host $api_key
 	
 	Get-ChildItem $artifacts_directory -Recurse -Include "*.nupkg" | 
 		ForEach-Object {
-			#& $nuget_exec push -Source $server $_.fullname $api_key
 			& $nuget_exec push $_.fullname $api_key
         }
 }
