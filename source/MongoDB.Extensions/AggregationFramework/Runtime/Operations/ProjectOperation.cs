@@ -30,10 +30,15 @@ namespace MongoDB.Extensions.AggregationFramework.Runtime.Operations
             _operation.Add(element, 1);
         }
 
+        public void Contains<TMember>(String propertyName, Expression<Func<TClass, TMember>> project)
+        {
+            var element = ComputeElementName(project);
+            _operation.Add(propertyName, String.Concat("$", element));
+        }
+
         public void NotContains<TMember>(Expression<Func<TClass, TMember>> project)
         {
-            var map = (BsonClassMap<TClass>)BsonClassMap.LookupClassMap(typeof(TClass));
-            var element = map.GetMemberMap(project).ElementName;
+            var element = ComputeElementName(project);
             _operation.Add(element, 0);
         }
 

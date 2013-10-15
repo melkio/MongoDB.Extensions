@@ -11,6 +11,7 @@ namespace MongoDB.Extensions.AggregationFramework.ComponentModel.Operations
     public interface IProjectOperation<TClass> : IPipelineOperation<TClass>
     {
         void Contains<TMember>(Expression<Func<TClass, TMember>> project);
+        void Contains<TMember>(String propertyName, Expression<Func<TClass, TMember>> project);
         void NotContains<TMember>(Expression<Func<TClass, TMember>> project);
     }
 }
