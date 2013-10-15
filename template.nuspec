@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MongoDB.Extensions</id>
+    <version></version>
+    <authors>Alessandro Melchiori</authors>
+    <owners>CodicePlastico srl</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Extensions for mongo c# driver</description>
+    <copyright>Copyright © CodicePlastico srl 2013</copyright>
+	<dependencies>
+		<dependency id="mongocsharpdriver" version="1.8.0" />
+	</dependencies>
+  </metadata>
+</package>
