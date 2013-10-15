@@ -1,20 +1,14 @@
 ﻿using MongoDB.Driver;
+using MongoDB.Extensions.AggregationFramework.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MongoDB.Extensions.AggregationFramework
+namespace MongoDB.Extensions.AggregationFramework.Runtime
 {
-    public interface IPipeline<TClass> 
-    {
-        MongoCollection<TClass> Collection { get; }
-        void AddOperation(IPipelineOperation<TClass> operation);
-        AggregateResult Execute();
-    }
-
     class Pipeline<TClass> : IPipeline<TClass>
     {
-        private readonly IList<IPipelineOperation> _operations;
+        private readonly List<IPipelineOperation> _operations;
 
         public MongoCollection<TClass> Collection { get; private set; }
 
@@ -40,6 +34,5 @@ namespace MongoDB.Extensions.AggregationFramework
             var operations = _operations.Select(o => o.Apply());
             return Collection.Aggregate(operations);
         }
-
     }
 }

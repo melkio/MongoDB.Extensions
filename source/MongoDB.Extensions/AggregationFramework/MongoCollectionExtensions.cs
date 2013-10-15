@@ -1,4 +1,6 @@
 ﻿using MongoDB.Driver;
+using MongoDB.Extensions.AggregationFramework.ComponentModel;
+using MongoDB.Extensions.AggregationFramework.Runtime;
 
 namespace MongoDB.Extensions.AggregationFramework
 {

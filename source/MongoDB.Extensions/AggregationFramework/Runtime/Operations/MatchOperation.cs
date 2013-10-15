@@ -1,11 +1,12 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using MongoDB.Extensions.AggregationFramework.ComponentModel;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MongoDB.Extensions.AggregationFramework.Operations
+namespace MongoDB.Extensions.AggregationFramework.Runtime.Operations
 {
     class MatchOperation<TClass> : IPipelineOperation<TClass>
     {

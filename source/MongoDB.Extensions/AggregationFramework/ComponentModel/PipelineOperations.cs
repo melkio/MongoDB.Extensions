@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MongoDB.Extensions.AggregationFramework
+namespace MongoDB.Extensions.AggregationFramework.ComponentModel
 {
     public enum PipelineOperations
     {

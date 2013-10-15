@@ -47,18 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AggregatioFramework\IPipeline.cs" />
-    <Compile Include="AggregatioFramework\IPipelineBuilder.cs" />
-    <Compile Include="AggregatioFramework\IPipelineOperation.cs" />
-    <Compile Include="AggregatioFramework\IProjectOperation.cs" />
-    <Compile Include="AggregatioFramework\MongoCollectionExtensions.cs" />
-    <Compile Include="AggregatioFramework\Operations\MatchOperation.cs" />
-    <Compile Include="AggregatioFramework\PipelineOperations.cs" />
-    <Compile Include="AggregatioFramework\PipelineOperationsExtensions.cs" />
+    <Compile Include="AggregationFramework\ComponentModel\IPipeline.cs" />
+    <Compile Include="AggregationFramework\ComponentModel\IPipelineOperation.cs" />
+    <Compile Include="AggregationFramework\ComponentModel\Operations\IProjectOperation.cs" />
+    <Compile Include="AggregationFramework\MongoCollectionExtensions.cs" />
+    <Compile Include="AggregationFramework\Runtime\Operations\MatchOperation.cs" />
+    <Compile Include="AggregationFramework\ComponentModel\PipelineOperations.cs" />
+    <Compile Include="AggregationFramework\PipelineOperationsExtensions.cs" />
+    <Compile Include="AggregationFramework\Runtime\Operations\ProjectOperation.cs" />
+    <Compile Include="AggregationFramework\Runtime\Pipeline.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AggregationFramework\Operations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

@@ -1,4 +1,6 @@
-﻿using MongoDB.Extensions.AggregationFramework.Operations;
+﻿using MongoDB.Extensions.AggregationFramework.ComponentModel;
+using MongoDB.Extensions.AggregationFramework.ComponentModel.Operations;
+using MongoDB.Extensions.AggregationFramework.Runtime.Operations;
 using System;
 using System.Linq.Expressions;
 

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Extensions.Test.ObjectModel;
 using MongoDB.Bson.Serialization;
 using NUnit.Framework;
-using MongoDB.Extensions.AggregationFramework;
+using MongoDB.Extensions.AggregationFramework.Runtime.Operations;
 
 namespace MongoDB.Extensions.Test.AggregationFramework.Operations
 {

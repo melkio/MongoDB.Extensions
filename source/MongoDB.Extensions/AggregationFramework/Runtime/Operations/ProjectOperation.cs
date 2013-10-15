@@ -1,19 +1,15 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
+using MongoDB.Extensions.AggregationFramework.ComponentModel;
+using MongoDB.Extensions.AggregationFramework.ComponentModel.Operations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace MongoDB.Extensions.AggregationFramework
+namespace MongoDB.Extensions.AggregationFramework.Runtime.Operations
 {
-    public interface IProjectOperation<TClass> : IPipelineOperation<TClass>
-    {
-        void Contains<TMember>(Expression<Func<TClass, TMember>> project);
-        void NotContains<TMember>(Expression<Func<TClass, TMember>> project);
-    }
-
     class ProjectOperation<TClass> : IProjectOperation<TClass>
     {
         private readonly BsonDocument _operation;
