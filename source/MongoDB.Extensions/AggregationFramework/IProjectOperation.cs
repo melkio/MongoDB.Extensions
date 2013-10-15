@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace MongoDB.Extensions
+namespace MongoDB.Extensions.AggregationFramework
 {
     public interface IProjectOperation<TClass> : IPipelineOperation<TClass>
     {

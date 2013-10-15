@@ -1,7 +1,6 @@
 ﻿using MongoDB.Driver;
-using System;
 
-namespace MongoDB.Extensions
+namespace MongoDB.Extensions.AggregationFramework
 {
     public static class MongoCollectionExtensions
     {

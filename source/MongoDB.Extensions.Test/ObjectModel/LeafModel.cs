@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace MongoDB.Extensions.Test.ObjectModel
 {
     public class LeafModel

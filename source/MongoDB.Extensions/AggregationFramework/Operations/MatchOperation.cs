@@ -5,7 +5,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MongoDB.Extensions.Operations
+namespace MongoDB.Extensions.AggregationFramework.Operations
 {
     class MatchOperation<TClass> : IPipelineOperation<TClass>
     {

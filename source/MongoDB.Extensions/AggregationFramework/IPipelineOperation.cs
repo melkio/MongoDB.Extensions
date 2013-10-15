@@ -1,7 +1,6 @@
 ﻿using MongoDB.Bson;
-using System;
 
-namespace MongoDB.Extensions
+namespace MongoDB.Extensions.AggregationFramework
 {
     public interface IPipelineOperation
     {

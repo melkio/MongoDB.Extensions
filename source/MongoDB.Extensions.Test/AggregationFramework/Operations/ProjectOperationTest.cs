@@ -1,9 +1,9 @@
 ﻿using MongoDB.Extensions.Test.ObjectModel;
 using MongoDB.Bson.Serialization;
 using NUnit.Framework;
-using System;
+using MongoDB.Extensions.AggregationFramework;
 
-namespace MongoDB.Extensions.Test
+namespace MongoDB.Extensions.Test.AggregationFramework.Operations
 {
     [TestFixture]
     public class ProjectOperationTest

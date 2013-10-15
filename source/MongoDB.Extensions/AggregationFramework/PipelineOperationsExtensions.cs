@@ -1,8 +1,8 @@
-﻿using MongoDB.Extensions.Operations;
+﻿using MongoDB.Extensions.AggregationFramework.Operations;
 using System;
 using System.Linq.Expressions;
 
-namespace MongoDB.Extensions
+namespace MongoDB.Extensions.AggregationFramework
 {
     public static class PipelineOperationsExtensions
     {

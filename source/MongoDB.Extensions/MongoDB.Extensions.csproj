@@ -47,14 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPipeline.cs" />
-    <Compile Include="IPipelineBuilder.cs" />
-    <Compile Include="IPipelineOperation.cs" />
-    <Compile Include="IProjectOperation.cs" />
-    <Compile Include="MongoCollectionExtensions.cs" />
-    <Compile Include="Operations\MatchOperation.cs" />
-    <Compile Include="PipelineOperations.cs" />
-    <Compile Include="PipelineOperationsExtensions.cs" />
+    <Compile Include="AggregatioFramework\IPipeline.cs" />
+    <Compile Include="AggregatioFramework\IPipelineBuilder.cs" />
+    <Compile Include="AggregatioFramework\IPipelineOperation.cs" />
+    <Compile Include="AggregatioFramework\IProjectOperation.cs" />
+    <Compile Include="AggregatioFramework\MongoCollectionExtensions.cs" />
+    <Compile Include="AggregatioFramework\Operations\MatchOperation.cs" />
+    <Compile Include="AggregatioFramework\PipelineOperations.cs" />
+    <Compile Include="AggregatioFramework\PipelineOperationsExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

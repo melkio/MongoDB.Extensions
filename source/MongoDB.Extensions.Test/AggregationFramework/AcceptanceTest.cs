@@ -1,14 +1,9 @@
-﻿using MongoDB.Extensions;
+﻿using MongoDB.Extensions.AggregationFramework;
 using MongoDB.Extensions.Test.ObjectModel;
-using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
-using MongoDB.Driver.Linq;
 using NUnit.Framework;
-using System;
-using System.Linq;
-using System.Linq.Expressions;
 
-namespace MongoDB.Extensions.Test
+namespace MongoDB.Extensions.Test.AggregationFramework
 {
     [TestFixture]
     public class AcceptanceTest

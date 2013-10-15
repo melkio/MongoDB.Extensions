@@ -1,10 +1,9 @@
-﻿using MongoDB.Extensions.Operations;
+﻿using MongoDB.Extensions.AggregationFramework.Operations;
 using MongoDB.Extensions.Test.ObjectModel;
 using MongoDB.Driver;
 using NUnit.Framework;
-using System;
 
-namespace MongoDB.Extensions.Test
+namespace MongoDB.Extensions.Test.AggregationFramework.Operations
 {
     [TestFixture]
     public class MatchOperationTest

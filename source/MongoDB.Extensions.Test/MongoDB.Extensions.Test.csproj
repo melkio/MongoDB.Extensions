@@ -50,13 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcceptanceTest.cs" />
-    <Compile Include="ExpressionCompilerTest.cs" />
-    <Compile Include="MatchOperationTest.cs" />
+    <Compile Include="AggregationFramework\AcceptanceTest.cs" />
+    <Compile Include="AggregationFramework\Operations\MatchOperationTest.cs" />
     <Compile Include="ObjectModel\ChildDocument.cs" />
     <Compile Include="ObjectModel\LeafModel.cs" />
     <Compile Include="ObjectModel\RootDocument.cs" />
-    <Compile Include="ProjectOperationTest.cs" />
+    <Compile Include="AggregationFramework\Operations\ProjectOperationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
