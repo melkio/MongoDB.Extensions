@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace MongoDB.AggregationFramework.Extensions
+namespace MongoDB.Extensions
 {
     public interface IPipeline<TClass> 
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MongoDB.AggregationFramework.Extensions
+namespace MongoDB.Extensions
 {
     public interface IPipelineBuilder<TClass>
     {

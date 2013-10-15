@@ -7,8 +7,8 @@
     <ProjectGuid>{28B60E46-481B-45D2-A283-84ADF9976123}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MongoDB.AggregationFramework.Extensions</RootNamespace>
-    <AssemblyName>MongoDB.AggregationFramework.Extensions</AssemblyName>
+    <RootNamespace>MongoDB.Extensions</RootNamespace>
+    <AssemblyName>MongoDB.Extensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

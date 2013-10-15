@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MongoDB.AggregationFramework.Extensions.Test.ObjectModel
+namespace MongoDB.Extensions.Test.ObjectModel
 {
     public class LeafModel
     {

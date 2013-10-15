@@ -1,9 +1,9 @@
-﻿//using MongoDB.AggregationFramework.Extensions.Test.ObjectModel;
+﻿//using MongoDB.Extensions.Test.ObjectModel;
 //using MongoDB.Bson.Serialization;
 //using MongoDB.Driver.Linq;
 //using NUnit.Framework;
 
-//namespace MongoDB.AggregationFramework.Extensions.Test
+//namespace MongoDB.Extensions.Test
 //{
 //    [TestFixture]
 //    public class ExpressionCompilerTest

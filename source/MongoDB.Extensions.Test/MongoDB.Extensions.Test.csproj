@@ -7,8 +7,8 @@
     <ProjectGuid>{865799B1-178C-4B9F-A26C-57BDB399B6B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MongoDB.AggregationFramework.Extensions.Test</RootNamespace>
-    <AssemblyName>MongoDB.AggregationFramework.Extensions.Test</AssemblyName>
+    <RootNamespace>MongoDB.Extensions.Test</RootNamespace>
+    <AssemblyName>MongoDB.Extensions.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -60,13 +60,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MongoDB.AggregationFramework.Extensions\MongoDB.AggregationFramework.Extensions.csproj">
-      <Project>{28b60e46-481b-45d2-a283-84adf9976123}</Project>
-      <Name>MongoDB.AggregationFramework.Extensions</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\MongoDB.Extensions\MongoDB.Extensions.csproj">
+      <Project>{28b60e46-481b-45d2-a283-84adf9976123}</Project>
+      <Name>MongoDB.Extensions</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
