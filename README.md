@@ -9,7 +9,7 @@ Install-Package MongoDB.Extensions
 
 An easy sample, about how to use package API:  
 
-var result = _collection.CreatePipeline()
+    var result = _collection.CreatePipeline()
                 .Match(d => d.Value >= 10)
                 .Project(c =>
                     {
