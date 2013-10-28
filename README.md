@@ -17,5 +17,10 @@ An easy sample, about how to use package API:
                         c.Contains("temp", d => d.Child.Leaf.Value);
                         c.NotContains(d => d.Id);
                     })
+                .Sort(c =>
+                    {
+                        c.Descending(d => d.Value);
+                    })
+                .Skip(4)
                 .Limit(3)
                 .Execute();
